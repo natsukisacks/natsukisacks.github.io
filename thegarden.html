@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<!--
+	This page holds information about my SoftDes final, the Garden.
+-->
+<html>
+	<head>
+		<title>THE GARDEN</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+                <!-- Nav -->
+					<header id="header">
+						<div class="inner">
+								<nav id="nav">
+									<ul>
+										<li><a href="index.html">OVERVIEW</a></li>
+										<li><a href="veir.html">VEIR INTERNSHIP</a></li>
+										<li><a href="thegarden.html">PROJECTS</a></li>
+										<li><a href="generic.html">GENERIC</a></li>
+										<li><a href="elements.html">Elements</a></li>
+									</ul>
+								</nav>
+						</div>
+					</header>
+
+				<!-- Introduction -->
+					<div id="main">
+						<div class="inner">
+                        <header>
+							<h1>THE GARDEN</h1>
+                            <h3>FINAL PROJECT FOR SOFTWARE DESIGN</h3>
+                            <h3><em>SPRING 2022</em></h3>
+                            <h4>Partner: Olga Pidruchna</h4>
+                        </header>
+                        <abbr></abbr>
+                        <abbr></abbr>
+                        <header>A Stardew Valley-inspired game created using Python's Pygame library</header>
+                        <p><em>All source code can be found in <a href="https://github.com/natsukisacks/the-garden">this GitHub repository.</a></em></p>
+                        <p><em>Read about the details of our game <a href="https://olincollege.github.io/the-garden/">here!</a></em></p>
+							<p>
+                                For the final project of my Software Design class, we were tasked to create an 
+                                interactive game using Python's Pygame library. 
+                                We were very interested in creating a role-playing game using pixel art. 
+                            </p>
+                            <p>
+                                The idea of the game is to move the player around the screen to collect vegetables. 
+                                When the player collects a certain amount, they win a mantis shrimp (the name of our group)!
+                            </p>
+                            <!--PUT PICTURES HERE-->
+                            <span class="image.left">
+                                <img src="images/thegarden/garden_ss.webp" alt="" />
+                            </span>
+                            <span class="image.right">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/-90kkBX34ZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </span>
+                        </div>
+					</div>
+
+                <!-- MVC Architecture -->
+                    <div id="main">
+                        <div class="inner">
+                            <header>
+                                <h2>MVC Architecture</h2>
+                            </header>
+                            <p>
+                                We utilized MVC (Model View Controller) architecture to organize our code. 
+                                This was a great way to get a better understanding of how game setups can be 
+                                organized and was great practice in organizing code.
+                            </p>
+                            <p>
+                                Our Model.py contains everything necessary to create the foundation of the game, 
+                                like instantiating the player and layout. View.py contains all code necessary to 
+                                display the game in a understandable way. For example, it contains code for blitting objects. 
+                                Controller.py contains everything necessary for the user to control things in the game, 
+                                like the movement of the player and the things it eats. 
+                            </p>
+                            <p>
+                                We utilized Pygame concepts like blit, screen, sprites, and rects to create obstacles 
+                                for the character and contain them within the screen. 
+                            </p>
+                            <p>
+                                Pygame was incredibly fun to learn and use, but it got very complex at times. 
+                                Had we had more time to work on this project, we likely would have iterated to 
+                                create multiple scenes and a more complex task. 
+                            </p>
+                        </div>
+                    </div>
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>CONTACT</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
