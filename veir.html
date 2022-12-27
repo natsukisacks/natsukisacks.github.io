@@ -83,6 +83,22 @@
 							<p>Diagram of the problem. These deadband values are arbitrary.</p>
                         </div>
                     </div>
+
+				<!-- Relay-Controlled -->
+				<div id="main">
+					<div class="inner">
+						<heading><h2>RELAY-CONTROLLED</h2></heading>
+						<p>In the case that the actual implementation requires a simpler controller, 
+							I created this relay-controlled pressure controller. As shown in the diagram above, 
+							if the pressure goes above a certain level, 
+							the vapor valve turns on and vice versa. 
+							I used two relays to represent these two valves. 
+							I used a potentiometer as an input and utilized the serial monitor 
+							in the Arduino IDE to track how much voltage (AKA pressure) was being inputted.</p>
+						<p style="text-align:center"></p><span class="image main"><img src="images/VEIR/pid_controller.webp" alt="" /></span></p>
+						<p>Diagram of the problem. These deadband values are arbitrary.</p>
+					</div>
+				</div>
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
