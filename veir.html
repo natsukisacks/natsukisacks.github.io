@@ -93,10 +93,49 @@
 							I used two relays to represent these two valves. 
 							I used a potentiometer as an input and utilized the serial monitor 
 							in the Arduino IDE to track how much voltage (AKA pressure) was being inputted.</p>
-						<p style="text-align:center"></p><span class="image main"><img src="images/VEIR/pid_controller.webp" alt="" /></span></p>
-						<p>Diagram of the problem. These deadband values are arbitrary.</p>
+						<p><span class="image main"><img src="images/VEIR/relay_code.webp"></span></p>
+						<p>Screenshot of relay-controlled code.</p>
+						<p><img src="images/VEIR/relay_circuit.webp" alt="" width="250"/><img src="images/VEIR/schematic_diagram.webp" alt="" width="250"/><img src="images/VEIR/relay_serial.webp" alt="" width="250"/></p>
+						<p>From left to right: relay-controlled circuit; schematic diagram of relay-controlled circuit; serial monitor debugging.</p>
 					</div>
 				</div>
+
+				<!-- PID Controller -->
+				<div id="main">
+					<div class="inner">
+						<heading><h2>PID CONTROLLER</h2></heading>
+						<p>In the case that the actual implementation requires a more sensitive controller, 
+							I researched the implementation of a PID controller. 
+							PID controller can get very mathematically complex and can be quite difficult 
+							to tune. This was my first introduction to controls engineering through PID 
+							controllers, and I found the process of it very interesting, 
+							albeit the fact that it got quite complex at times.</p>
+						<p>PID controllers can utilize proportional (P), integral (I), and derivative (D) calculations, 
+							but this type of controller can be created with any amount of these three parts. 
+							Almost 90% of controllers in industry are some level of PID controller.</p>
+						
+						<heading><h3>PARTS OF A PID CONTROLLER</h3></heading>
+						<p><strong><u>P</u>roportional:</strong> Big immediate reaction on the output.</p>
+						<p><strong><u>D</u>erivative:</strong> Tracks the past, since it's adding up values over time.</p>
+						<p><strong><u>I</u>ntegral:</strong> Predicts where the output is going.</p>
+
+						<p>Tuning the PID controller to the right settings can also be extremely challenging. 
+							The way to tune a PID controller is to adjust the constant in the beginning of 
+							each of the PID calculations.</p>
+		
+						<p><img src="images/VEIR/pid_diagram.webp" alt="" height="250"/><img src="images/VEIR/pid_tuning.webp" alt="" height="250"/><img src="images/VEIR/relay_serial.webp" alt="" width="250"/></p>
+						<p>Diagram of a general PID controller (left); Example of different ways to tune a PID controller (right).</p>
+						<p>Since the company did not have pressure sensor valves to test on, there wasn't a way for me to tune the PID controller. 
+							I spent time researching the best libraries to use and understanding how PID controllers work and how to tune them. 
+							Overall, I had a great time with this project and look forward to continuing to explore controls engineering and 
+							working with Arduino.</p>
+
+						<p><img src="images/VEIR/pid_code.webp" alt="" width="300"/></p><p>PID controller code utilizing an open-source PID library.</p>
+						<p><img src="images/VEIR/pid_specific_diagram.webp" alt="" height="150"/></p>
+						<p>Cycle of this PID controller. In constant feedback loop.</p>	
+					</div>
+				</div>
+
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
